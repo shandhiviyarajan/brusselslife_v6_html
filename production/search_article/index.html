@@ -1,0 +1,787 @@
+---
+layout : default-search.html
+title : Search address | Brusselslife.be
+---
+
+
+<header id="header_section" class="shopping">
+    <a href="#" id="side_menu_trigger">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="logo">
+
+        <h2 class="section_title">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i> Shopping<br><small>Fashion</small>
+        </h2>
+
+        <a href="/">
+            <img src="{{assets}}images/logo.png" alt="">
+        </a>
+        <div class="clearfix"></div>
+    </div>
+    <div class="right_menu">
+        <ul>
+            <li>
+                <a href="#" id="site_search">
+                    <i class="fa fa-search"></i>
+                </a>
+            </li>
+            <li class="">
+                <a href="/register">
+                    REGISTER
+                </a>
+            </li>
+            <li>
+                <a href="/login">
+                    LOGIN
+                </a>
+            </li>
+            <li>
+                <a href="/newsletter">
+                    NEWSLETTER
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="/fr" data-toggle="dropdown">
+                    FR <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="active"><a class="active" href="#">FR</a></li>
+                    <li><a href="/en">EN</a></li>
+                    <li><a href="/nl">NL</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+<section id="page_search"
+         style="background:url('/assets/images/section_images/shopping.jpg') center center no-repeat; background-size:cover;" class="search_results">
+    <form action="#" class="section">
+
+        <div id="category_dropdown" class="dropdown"
+        >
+            <a href="#" data-toggle="dropdown">
+                <span>
+                    Shopping category
+                </span> <i class="fa fa-caret-down"></i>
+            </a>
+
+
+            <ul class="dropdown-menu">
+                <li><a href="#"><span>Fashion</span> <i class="fa fa-caret-right"></i></a></li>
+                <li><a href="#"><span>Decoration</span> <i class="fa fa-caret-right"></i></a></li>
+                <li><a href="#"><span>Food</span> <i class="fa fa-caret-right"></i></a></li>
+                <li><a href="#"><span>Florists</span> <i class="fa fa-caret-right"></i></a></li>
+                <li><a href="#"><span>Opticians</span> <i class="fa fa-caret-right"></i></a></li>
+                <li><a href="#"><span>Bookshop</span> <i class="fa fa-caret-right"></i></a></li>
+                <li><a href="#"><span>Local Market</span> <i class="fa fa-caret-right"></i></a></li>
+                <li><a href="#"><span>Technologies & Multimedia</span> <i class="fa fa-caret-right"></i></a></li>
+                <li><a href="#"><span>Market</span> <i class="fa fa-caret-right"></i></a></li>
+                <li><a href="#"><span>District & Shopping center</span> <i class="fa fa-caret-right"></i></a></li>
+            </ul>
+
+        </div>
+        <input type="text" placeholder="Address, keywords, shops..."/>
+        <button type="submit">Search</button>
+        <input type="hidden" name="category" class="category_name"/>
+
+    </form>
+
+    <div class="overlay"></div>
+
+</section>
+<div class="clearfix"></div>
+<section class="container-fluid"
+         id="brusselslife_search">
+    <div id="search-filters_wrapper">
+        <div class="title">
+            <h2>
+                Filters - Refine your search
+            </h2>
+            <div class="clearfix"></div>
+        </div>
+
+        <!--<div class="sort my_selection">-->
+        <!--<h3>-->
+        <!--My selection-->
+        <!--</h3>-->
+        <!--<p>-->
+        <!--Terms - <strong>Pizza brussels</strong> <br>-->
+        <!--Distance radius - <strong> 5km </strong>-->
+        <!--</p>-->
+        <!--</div>-->
+        <div class="sort">
+            <h3>
+                Choose locations
+            </h3>
+            <input id="your_city"
+                   class="form-control"
+                   type="text"
+                   placeholder="Cities">
+        </div>
+        <!--<div class="sort search_radius">-->
+        <!--<h3>-->
+        <!--Search radius-->
+        <!--</h3>-->
+        <!--<div class="dragger">-->
+
+        <!--</div>-->
+        <!--<p>-->
+        <!--Search radius - 5km-->
+        <!--</p>-->
+        <!--</div>-->
+        <div class="sort">
+            <h3>
+                Choose Cuisine
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">Belgian (200)</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Bakery (152)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Fast food (150)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Thai (90) </a>
+                </li>
+                <li>
+                    <a href="#">Indian (45)</a>
+                </li>
+                <li>
+                    <a href="#">French (31)</a>
+                </li>
+                <li>
+                    <a href="#">Chinese (24)</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Cafe (15)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Bars & Pubs (10)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Japanese (1)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Sea food (1)
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sort">
+            <h3>
+                Choose Category
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">All (200)</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Wellness (152)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Hotels (150)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Restaurants (90) </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Shopping (45)</a>
+                </li>
+                <li>
+                    <a href="#">Going out (31)</a>
+                </li>
+                <li>
+                    <a href="#">Living (24)</a>
+                </li>
+                <li>
+                    <a href="#">
+                        News (15)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Sports (10)
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="sort">
+            <h3>
+                More options
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">All (200)</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Wellness (152)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Hotels (150)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Restaurants (90) </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Shopping (45)</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="sort">
+            <h3>
+                Other shops
+            </h3>
+            <ul>
+                <li>
+                    <a href="#">All (200)</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Wellness (152)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Hotels (150)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Restaurants (90) </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Shopping (45)</a>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </div>
+    <div id="search_results_wrapper">
+        <div id="results_list">
+            <div class="title">
+                <h2>
+                    Search results for "Pizza brussels"
+                </h2>
+                <p class="count">
+                    Showing 1-25 of 456 results
+                </p>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="search_action_btns">
+                <a href="#" class="btn active">
+                    Addresses
+                </a>
+                <a href="#" class="btn">
+                    Articles
+                </a>
+                <a href="#" class="btn">
+                    Agenda
+                </a>
+                <button>
+                    Nearby
+                </button>
+            </div>
+            <ul>
+                <li class="sponsored">
+                    <a href="#">
+                        <figure>
+                            <img src="{{assets}}images/address_2.png" alt=""/>
+                        </figure>
+                        <h2>
+                            Glacier gaston
+                        </h2>
+                        <p class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Avenue Louise, 381 1050 Ixelles
+                            <span>
+                            2km
+                        </span>
+                        </p>
+                        <p class="filters">
+                            Restaurant, Glacier
+                        </p>
+                        <p class="summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et odio eget enim auctor elementum. Suspendisse felis neque, pretium eget accumsa.
+                        </p>
+                        <div class="clearfix"></div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <figure>
+                            <img src="{{assets}}images/address_1.png" alt=""/>
+                        </figure>
+                        <h2>
+                            The avenue by barsey
+                        </h2>
+                        <p class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Avenue Louise, 381 1050 Ixelles
+                            <span>
+                            2km
+                        </span>
+                        </p>
+                        <p class="filters">
+                            Restaurant, Glacier
+                        </p>
+                        <p class="summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et odio eget enim auctor elementum. Suspendisse felis neque, pretium eget accumsa.
+                        </p>
+                        <div class="clearfix"></div>
+
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <figure>
+                            <img src="{{assets}}images/address_1.png" alt=""/>
+                        </figure>
+                        <h2>
+                            The avenue by barsey
+                        </h2>
+                        <p class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Avenue Louise, 381 1050 Ixelles
+                            <span>
+                            2km
+                        </span>
+                        </p>
+                        <p class="filters">
+                            Restaurant, Glacier
+                        </p>
+                        <p class="summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et odio eget enim auctor elementum. Suspendisse felis neque, pretium eget accumsa.
+                        </p>
+                        <div class="clearfix"></div>
+
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <figure>
+                            <img src="{{assets}}images/address_1.png" alt=""/>
+                        </figure>
+                        <h2>
+                            The avenue by barsey
+                        </h2>
+                        <p class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Avenue Louise, 381 1050 Ixelles
+                            <span>
+                            2km
+                        </span>
+                        </p>
+                        <p class="filters">
+                            Restaurant, Glacier
+                        </p>
+                        <p class="summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et odio eget enim auctor elementum. Suspendisse felis neque, pretium eget accumsa.
+                        </p>
+                        <div class="clearfix"></div>
+
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <figure>
+                            <img src="{{assets}}images/address_1.png" alt=""/>
+                        </figure>
+                        <h2>
+                            The avenue by barsey
+                        </h2>
+                        <p class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Avenue Louise, 381 1050 Ixelles
+                            <span>
+                            2km
+                        </span>
+                        </p>
+                        <p class="filters">
+                            Restaurant, Glacier
+                        </p>
+                        <p class="summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et odio eget enim auctor elementum. Suspendisse felis neque, pretium eget accumsa.
+                        </p>
+                        <div class="clearfix"></div>
+
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <figure>
+                            <img src="{{assets}}images/address_1.png" alt=""/>
+                        </figure>
+                        <h2>
+                            The avenue by barsey
+                        </h2>
+                        <p class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Avenue Louise, 381 1050 Ixelles
+                            <span>
+                            2km
+                        </span>
+                        </p>
+                        <p class="filters">
+                            Restaurant, Glacier
+                        </p>
+                        <p class="summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et odio eget enim auctor elementum. Suspendisse felis neque, pretium eget accumsa.
+                        </p>
+                        <div class="clearfix"></div>
+
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <figure>
+                            <img src="{{assets}}images/address_1.png" alt=""/>
+                        </figure>
+                        <h2>
+                            The avenue by barsey
+                        </h2>
+                        <p class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Avenue Louise, 381 1050 Ixelles
+                            <span>
+                            2km
+                        </span>
+                        </p>
+                        <p class="filters">
+                            Restaurant, Glacier
+                        </p>
+                        <p class="summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et odio eget enim auctor elementum. Suspendisse felis neque, pretium eget accumsa.
+                        </p>
+                        <div class="clearfix"></div>
+
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <figure>
+                            <img src="{{assets}}images/address_1.png" alt=""/>
+                        </figure>
+                        <h2>
+                            The avenue by barsey
+                        </h2>
+                        <p class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Avenue Louise, 381 1050 Ixelles
+                            <span>
+                            2km
+                        </span>
+                        </p>
+                        <p class="filters">
+                            Restaurant, Glacier
+                        </p>
+                        <p class="summary">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et odio eget enim auctor elementum. Suspendisse felis neque, pretium eget accumsa.
+                        </p>
+                        <div class="clearfix"></div>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="search_map">
+            <div id="map-canvas">
+
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    (function ($, window) {
+        'use strict';
+
+        var SearchMap = function () {
+
+            //Map style
+            var map_style = [
+                {
+                    "featureType": "administrative.neighborhood",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "lightness": "16"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        },
+                        {
+                            "color": "#f2f2f2"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.attraction",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.business",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.business",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.government",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.government",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.medical",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.medical",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.place_of_worship",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.place_of_worship",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.school",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.school",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.sports_complex",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.sports_complex",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                }
+            ];
+            var mapMarker = "/assets/images/svg/mapMarker2.svg";
+            var map, marker, center;
+
+            function
+            _loadSearchMap() {
+
+                //set document height//
+                //$("#map-canvas, #results_list").height($(document).height());
+
+                var mapOptions = {
+                    center: center,
+                    zoom: 16,
+                    styles: map_style,
+                    zoomControl: true,
+                    navigationControl: false,
+                    scaleControl: true,
+                    scrollwheel: false,
+                    mapTypeControl: true
+                };
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: '<div class="results-info-window"><a href=""><h4>  Blife </h4><p>Address line here</p></a></div>'
+                });
+
+                if (true) {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+                        console.log(position.coords.latitude);
+                        console.log(position.coords.longitude);
+
+                        //   alert(position.coords.latitude + "," + position.coords.longitude);
+
+                        center = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+                        if ($("#search_map > #map-canvas").length > 0) {
+                            map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+                            marker = new google.maps.Marker({
+                                position: center,
+                                map: map,
+                                icon: mapMarker,
+                                animation: google.maps.Animation.DROP,
+                                clickable: true,
+                                title: "You are here",
+                                draggable: true
+                            });
+
+                            //Center user maker drag function
+                            google.maps.event.addListener(marker, 'dragend', function (event) {
+
+                                console.log(this.position.latitude);
+                                console.log(this.position.longitude);
+
+                            });
+
+                            //Center user maker click function
+                            google.maps.event.addListener(marker, 'click', function (e) {
+                                console.log(this);
+                            });
+
+                            //Search map resize function
+                            google.maps.event.addDomListenerOnce(map, 'idle', function () {
+                                google.maps.event.addDomListener(window, 'resize', function () {
+                                    map.setCenter(center);
+                                });
+                            });
+                        }
+                    });
+
+
+                } else {
+                    center = new google.maps.LatLng(50.8835272, 4.3188155); //Belgium
+                }
+            }
+
+            return {
+                init: function () {
+                    _loadSearchMap();
+                }
+            };
+
+        };
+
+        //Pace js
+        Pace.on('done', function () {
+            SearchMap().init();
+        });
+
+    })(jQuery, window);
+</script>
+

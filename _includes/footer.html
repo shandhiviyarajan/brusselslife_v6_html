@@ -1,0 +1,65 @@
+<footer>
+    <div class="footer_img">
+        <img src="{{assets}}images/footer-bg-img.png" alt="">
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="{{assets}}images/logo.png" alt=""/>
+                </a>
+            </div>
+
+            <div class="social_links">
+                <a href="#" class="footer_fb"> <i class="fa fa-facebook"></i></a>
+                <a href="#" class="footer_tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="footer_ins"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <!--<a href="#" class="footer_google"><i class="fa fa-google" aria-hidden="true"></i></a>-->
+                <!--<a href="#" class="footer_in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>-->
+            </div>
+            <p class="copy_right">
+                Copyright 2018 &copy; Brusselslife.be All Rights Reserved. <br>
+                The content and images used on this site are copyright protected and copyrights vests with the respective owners.
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-595f7dad07e72d1b"></script>
+
+<script type="text/javascript">
+    var open = true;
+    var menuButton = $('#side_menu_trigger');
+    var swiper = new Swiper('#menu_swiper', {
+        slidesPerView: 'auto',
+        initialSlide: 1,
+        resistanceRatio: 1000,
+        slideToClickedSlide: true,
+        on: {
+            init: function () {
+                var slider = this;
+                menuButton.click(function () {
+                    // console.log(slider);
+                    if (open) {
+                        slider.slidePrev();
+                        open = false;
+                    } else {
+                        slider.slideNext();
+                        open = true;
+                    }
+
+
+                });
+            },
+
+            slideNextTransitionEnd: function () {
+                open = true;
+            },
+            slidePrevTransitionEnd: function () {
+                open = false;
+            }
+        }
+    });
+</script>
