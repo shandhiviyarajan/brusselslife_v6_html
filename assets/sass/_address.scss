@@ -70,9 +70,9 @@
 .address_scroll_view {
   margin: 0px -30px;
   padding: 30px 30px;
-//  background: rgba(238, 238, 238, 0.75);
+  //  background: rgba(238, 238, 238, 0.75);
   position: relative;
-
+  border-top: thin solid #d8d8d8;
   div.title {
     h2 {
       margin: 0px 0px 15px 0px;
@@ -86,7 +86,6 @@
       }
     }
   }
-
   .scroll_container {
 
     .owl-item {
@@ -131,7 +130,6 @@
       color: $orange;
     }
   }
-
 }
 
 .right_arrow,
@@ -344,20 +342,159 @@
 }
 
 .fork_reservation {
-  border-radius: 25px;
-  width: 280px;
-  margin: 15px auto;
+  border-radius: 2px;
+  width: 100%;
+  margin: 15px auto 0px auto;
   display: block;
-  font-weight: bold;
-  height: 44px;
-  background: #437132;
-  font-size: 16px;
+  font-weight: 400;
+  height: 68px;
+  background: #589442;
+  font-size: 22px;
   color: #fff;
+  text-transform: uppercase;
   border: none;
+  -webkit-transition: 0.15s ease;
+  -moz-transition: 0.15s ease;
+  -ms-transition: 0.15s ease;
+  -o-transition: 0.15s ease;
+  transition: 0.15s ease;
 
   &:hover {
-    background: #589442;
+    background: #25ae7d;
   }
 
+}
+
+.orange_address_block {
+  background: $orange;
+  text-align: center;
+  padding: 30px;
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  h3, p {
+    color: #fff;
+    font-weight: 400;
+    font-family: $baseFont2;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.address_overlay_block {
+  figure {
+    position: relative;
+    div {
+      a {
+        display: block;
+        text-decoration: none;
+
+      }
+      z-index: 100;
+
+      position: absolute;
+      padding-top: 30px;
+      width: 100%;
+      height: 100%;
+      background: rgba(38, 62, 78, 0.5);
+      text-align: center;
+      
+      i.fa {
+        color: #fff;
+        font-size: 36px;
+      }
+      h3, p {
+        font-family: $baseFont2;
+        color: #fff;
+      }
+      p {
+        font-style: italic;
+        font-weight: bold;
+        margin: 15px 0px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.address_same_category {
+  ul {
+
+    li.full {
+      figure {
+        position: relative;
+        div {
+
+          z-index: 100;
+          position: absolute;
+          padding: 44px 30px 30px 30px;
+          width: 100%;
+          height: 100%;
+          background: rgba(38, 62, 78, 0.5);
+          text-align: center;
+
+          i.fa {
+            color: #fff;
+            font-size: 36px;
+          }
+          h3, p {
+            font-family: $baseFont2;
+            color: #fff;
+          }
+          p {
+            font-style: italic;
+            font-weight: bold;
+            margin: 15px 0px;
+          }
+
+          h3 {
+            font-size: 18px;
+            line-height: 1.4em;
+          }
+
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.popular_addresses {
+  a {
+    display: block;
+    margin-bottom: 15px;
+
+    h3, p {
+      font-family: $baseFont2;
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: bold;
+      color: $dark_blue;
+      font-style: italic;
+      margin: 7px 0px;
+    }
+
+    p {
+      font-weight: 400;
+      margin: 0px;
+      span {
+        color: $light_blue;
+      }
+    }
+  }
 }
 

@@ -120,11 +120,12 @@ Common classes
     color: $dark_grey;
     font-size: 13px;
     margin: 0px;
+    font-family:$baseFont;
     a {
       text-decoration: none;
       font-size: 13px;
       color: $light_blue;
-      font-weight: bold;
+      font-weight: bold;       font-family:$baseFont;
 
       &:hover {
         color: $dark_blue;
@@ -141,7 +142,7 @@ Common classes
         font-size: 13px;
         font-style: italic;
         color: $lighter_blue;
-        font-family: $baseFont2;
+        font-family: $baseFont;
         font-weight: bold;
         text-decoration: none;
 
@@ -170,11 +171,11 @@ Common classes
 
 .left_block {
   position: relative;
-  padding: 15px 30px 0px 0px;
+  padding: 15px 15px 0px 0px;
   border-right: thin solid #eee;
 
   > h1 {
-    margin: 0px 0px 15px 0px;
+    margin: 0px 0px 7px 0px;
   }
 }
 

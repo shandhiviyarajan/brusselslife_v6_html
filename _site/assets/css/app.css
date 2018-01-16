@@ -88,12 +88,14 @@ Common classes
   .breadcrumb p {
     color: #656565;
     font-size: 13px;
-    margin: 0px; }
+    margin: 0px;
+    font-family: "Open Sans", sans-serif; }
     .breadcrumb p a {
       text-decoration: none;
       font-size: 13px;
       color: #4c7f90;
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: "Open Sans", sans-serif; }
       .breadcrumb p a:hover {
         color: #24475e; }
   .breadcrumb .next_content p {
@@ -104,7 +106,7 @@ Common classes
       font-size: 13px;
       font-style: italic;
       color: #76bac5;
-      font-family: "Merriweather", serif;
+      font-family: "Open Sans", sans-serif;
       font-weight: bold;
       text-decoration: none; }
       .breadcrumb .next_content p a:hover {
@@ -125,10 +127,10 @@ Common classes
 
 .left_block {
   position: relative;
-  padding: 15px 30px 0px 0px;
+  padding: 15px 15px 0px 0px;
   border-right: thin solid #eee; }
   .left_block > h1 {
-    margin: 0px 0px 15px 0px; }
+    margin: 0px 0px 7px 0px; }
 
 .main_image {
   margin-left: -30px; }
@@ -809,7 +811,7 @@ header.restaurant {
       float: left; }
       .home_block_recommended ul li div.info h3 {
         font-family: "Merriweather", serif;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: bold;
         font-style: italic;
         margin-bottom: 7px;
@@ -1157,7 +1159,8 @@ div.title iframe {
 .address_scroll_view {
   margin: 0px -30px;
   padding: 30px 30px;
-  position: relative; }
+  position: relative;
+  border-top: thin solid #d8d8d8; }
   .address_scroll_view div.title h2 {
     margin: 0px 0px 15px 0px;
     font-family: "Merriweather", serif;
@@ -1341,18 +1344,109 @@ div.title iframe {
   transform-origin: top left; }
 
 .fork_reservation {
-  border-radius: 25px;
-  width: 280px;
-  margin: 15px auto;
+  border-radius: 2px;
+  width: 100%;
+  margin: 15px auto 0px auto;
   display: block;
-  font-weight: bold;
-  height: 44px;
-  background: #437132;
-  font-size: 16px;
+  font-weight: 400;
+  height: 68px;
+  background: #589442;
+  font-size: 22px;
   color: #fff;
-  border: none; }
+  text-transform: uppercase;
+  border: none;
+  -webkit-transition: 0.15s ease;
+  -moz-transition: 0.15s ease;
+  -ms-transition: 0.15s ease;
+  -o-transition: 0.15s ease;
+  transition: 0.15s ease; }
   .fork_reservation:hover {
-    background: #589442; }
+    background: #25ae7d; }
+
+.orange_address_block {
+  background: #fd865e;
+  text-align: center;
+  padding: 30px; }
+  .orange_address_block a {
+    display: block;
+    text-decoration: none; }
+  .orange_address_block h3, .orange_address_block p {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Merriweather", serif; }
+  .orange_address_block h3 {
+    font-size: 18px; }
+
+.address_overlay_block figure {
+  position: relative; }
+  .address_overlay_block figure div {
+    z-index: 100;
+    position: absolute;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 62, 78, 0.5);
+    text-align: center; }
+    .address_overlay_block figure div a {
+      display: block;
+      text-decoration: none; }
+    .address_overlay_block figure div i.fa {
+      color: #fff;
+      font-size: 36px; }
+    .address_overlay_block figure div h3, .address_overlay_block figure div p {
+      font-family: "Merriweather", serif;
+      color: #fff; }
+    .address_overlay_block figure div p {
+      font-style: italic;
+      font-weight: bold;
+      margin: 15px 0px; }
+    .address_overlay_block figure div h3 {
+      font-size: 18px; }
+  .address_overlay_block figure img {
+    width: 100%; }
+
+.address_same_category ul li.full figure {
+  position: relative; }
+  .address_same_category ul li.full figure div {
+    z-index: 100;
+    position: absolute;
+    padding: 44px 30px 30px 30px;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 62, 78, 0.5);
+    text-align: center; }
+    .address_same_category ul li.full figure div i.fa {
+      color: #fff;
+      font-size: 36px; }
+    .address_same_category ul li.full figure div h3, .address_same_category ul li.full figure div p {
+      font-family: "Merriweather", serif;
+      color: #fff; }
+    .address_same_category ul li.full figure div p {
+      font-style: italic;
+      font-weight: bold;
+      margin: 15px 0px; }
+    .address_same_category ul li.full figure div h3 {
+      font-size: 18px;
+      line-height: 1.4em; }
+  .address_same_category ul li.full figure img {
+    width: 100%; }
+
+.popular_addresses a {
+  display: block;
+  margin-bottom: 15px; }
+  .popular_addresses a h3, .popular_addresses a p {
+    font-family: "Merriweather", serif; }
+  .popular_addresses a h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #24475e;
+    font-style: italic;
+    margin: 7px 0px; }
+  .popular_addresses a p {
+    font-weight: 400;
+    margin: 0px; }
+    .popular_addresses a p span {
+      color: #4c7f90; }
 
 .author {
   margin: 0px 0px 0px -30px;
