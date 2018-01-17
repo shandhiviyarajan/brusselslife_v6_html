@@ -786,13 +786,34 @@ header.restaurant {
   margin-top: 30px;
   position: relative;
   padding: 15px 15px;
-  background: #ecf6f7; }
+  background: #ecf6f7;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease; }
   .home_block_article_2 a {
     display: block;
     text-decoration: none; }
-  .home_block_article_2 img {
-    width: 100%;
-    margin-bottom: 15px; }
+    .home_block_article_2 a img {
+      width: 100%;
+      margin-bottom: 15px;
+      outline: 0;
+      border: none;
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      -webkit-transition: .3s ease;
+      -moz-transition: .3s ease;
+      -ms-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease; }
+    .home_block_article_2 a:hover img {
+      -webkit-filter: grayscale(0%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%); }
+  .home_block_article_2:hover {
+    background: #cfedee; }
   .home_block_article_2 h4 {
     font-family: "Merriweather", serif;
     color: #24475e;
@@ -867,13 +888,19 @@ header.restaurant {
     margin-bottom: 5px; }
     .home_block_recommended ul li figure {
       width: 140px;
-      height: 90px;
       overflow: hidden;
       float: left;
       margin-bottom: 7px; }
       .home_block_recommended ul li figure img {
         width: 100%;
-        height: 100px; }
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=100);
+        -webkit-filter: saturate(100%);
+        filter: saturate(100%);
+        -webkit-transition: .3s ease;
+        -moz-transition: .3s ease;
+        -ms-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease; }
       .home_block_recommended ul li figure div.address_pin {
         position: absolute;
         bottom: 0px;
@@ -901,6 +928,14 @@ header.restaurant {
     .home_block_recommended ul li a {
       display: block;
       text-decoration: none; }
+      .home_block_recommended ul li a:hover img {
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=250);
+        -webkit-filter: saturate(250%);
+        filter: saturate(250%); }
+      .home_block_recommended ul li a:hover div.info h3 {
+        color: #000; }
+      .home_block_recommended ul li a:hover div.info p {
+        color: #000; }
 
 .home_block_author {
   height: 320px;
@@ -1200,7 +1235,15 @@ header.restaurant {
       width: auto; }
 .around_you_address ul li a figure img,
 .home_block_agenda_list ul li a figure img {
-  width: 140px; }
+  width: 140px;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=100);
+  -webkit-filter: saturate(100%);
+  filter: saturate(100%);
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease; }
 .around_you_address ul li.full a figure img,
 .home_block_agenda_list ul li.full a figure img {
   width: 100%; }
@@ -1213,6 +1256,12 @@ header.restaurant {
   height: 32px; }
 .around_you_address ul li a h3 {
   font-size: 14px; }
+.around_you_address ul li a:hover a h3, .around_you_address ul li a:hover a p {
+  color: #000; }
+.around_you_address ul li a:hover img {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=250);
+  -webkit-filter: saturate(250%);
+  filter: saturate(250%); }
 
 .home_twitter_timeline {
   border: thin solid #d8d8d8;
@@ -2976,7 +3025,7 @@ section block orverrides
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.65); }
+    background: rgba(0, 0, 0, 0.5); }
   #page_search h2.tag_line {
     text-align: center;
     color: #fff;

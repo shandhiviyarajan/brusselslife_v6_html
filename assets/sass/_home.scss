@@ -40,30 +40,42 @@
   margin-top: 30px;
   position: relative;
   padding: 15px 15px;
-
   background: #ecf6f7;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
 
   a {
     display: block;
     text-decoration: none;
+
+    img {
+      width: 100%;
+      margin-bottom: 15px;
+      outline: 0;
+      border: none;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      -webkit-transition: .3s ease;
+      -moz-transition: .3s ease;
+      -ms-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease;
+    }
+
+    &:hover {
+      img {
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+      }
+    }
   }
 
-  img {
-    width: 100%;
-    margin-bottom: 15px;
+  &:hover {
+    background: #cfedee;
   }
-
-  //&:after {
-  //  content: '';
-  //  z-index: 1;
-  //  left: 0px;
-  //  position: absolute;
-  //  background: rgba(36, 71, 94, 0.75);
-  //  height: 100%;
-  //  width: 100%;
-  //  top: 0px;
-  //  border-radius: 0px 0px 0px 44px;
-  //}
 
   h4 {
     font-family: $baseFont2;
@@ -162,13 +174,21 @@
 
       figure {
         width: 140px;
-        height: 90px;
         overflow: hidden;
         float: left;
         margin-bottom: 7px;
         img {
           width: 100%;
-          height: 100px;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=100);
+          -webkit-filter: saturate(100%);
+          filter: saturate(100%);
+
+          -webkit-transition: .3s ease;
+          -moz-transition: .3s ease;
+          -ms-transition: .3s ease;
+          -o-transition: .3s ease;
+          transition: .3s ease;
+
         }
         div.address_pin {
           position: absolute;
@@ -205,6 +225,23 @@
       a {
         display: block;
         text-decoration: none;
+        &:hover {
+          img {
+            -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=250);
+            -webkit-filter: saturate(250%);
+            filter: saturate(250%);
+
+          }
+
+          div.info {
+            h3 {
+              color: #000;
+            }
+            p {
+              color: #000;
+            }
+          }
+        }
       }
     }
   }
@@ -640,6 +677,15 @@
       figure {
         img {
           width: 140px;
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=100);
+          -webkit-filter: saturate(100%);
+          filter: saturate(100%);
+
+          -webkit-transition: .3s ease;
+          -moz-transition: .3s ease;
+          -ms-transition: .3s ease;
+          -o-transition: .3s ease;
+          transition: .3s ease;
         }
       }
     }
@@ -669,8 +715,19 @@
       h3 {
         font-size: 14px;
       }
-      p {
 
+      &:hover {
+
+        a {
+          h3, p {
+            color: #000;
+          }
+        }
+        img {
+          -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=250);
+          -webkit-filter: saturate(250%);
+          filter: saturate(250%);
+        }
       }
     }
   }
