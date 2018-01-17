@@ -214,7 +214,7 @@ Common classes
     font-size: 16px; }
   .right_block p.address, .right_block p {
     font-size: 13px;
-    font-weight: 300; }
+    font-weight: 400; }
     .right_block p.address em, .right_block p em {
       color: #464646;
       font-size: 10px;
@@ -1144,31 +1144,34 @@ header.restaurant {
         display: block;
         margin-bottom: 15px; }
 
-.around_you_address ul li a,
-.home_block_agenda_list ul li a {
-  height: auto;
-  overflow: visible;
-  margin: 0px; }
-  .around_you_address ul li a h3,
-  .home_block_agenda_list ul li a h3 {
-    font-style: italic;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: "Merriweather", serif;
-    color: #24475e;
-    line-height: 1.4em; }
-  .around_you_address ul li a p,
-  .home_block_agenda_list ul li a p {
-    font-size: 13px;
-    font-weight: 400;
-    margin: 5px 0px 0px 0px; }
-    .around_you_address ul li a p span,
-    .home_block_agenda_list ul li a p span {
-      color: #4c7f90; }
-  .around_you_address ul li a figure,
-  .home_block_agenda_list ul li a figure {
+.around_you_address ul li,
+.home_block_agenda_list ul li {
+  position: relative; }
+  .around_you_address ul li a,
+  .home_block_agenda_list ul li a {
     height: auto;
-    width: auto; }
+    overflow: visible;
+    margin: 0px; }
+    .around_you_address ul li a h3,
+    .home_block_agenda_list ul li a h3 {
+      font-style: italic;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Merriweather", serif;
+      color: #24475e;
+      line-height: 1.4em; }
+    .around_you_address ul li a p,
+    .home_block_agenda_list ul li a p {
+      font-size: 13px;
+      font-weight: 400;
+      margin: 5px 0px 0px 0px; }
+      .around_you_address ul li a p span,
+      .home_block_agenda_list ul li a p span {
+        color: #4c7f90; }
+    .around_you_address ul li a figure,
+    .home_block_agenda_list ul li a figure {
+      height: auto;
+      width: auto; }
 .around_you_address ul li a figure img,
 .home_block_agenda_list ul li a figure img {
   width: 140px; }
@@ -1176,8 +1179,14 @@ header.restaurant {
 .home_block_agenda_list ul li.full a figure img {
   width: 100%; }
 
+.around_you_address ul li button.video_play {
+  left: 108px;
+  font-size: 16px;
+  bottom: 0px;
+  width: 32px;
+  height: 32px; }
 .around_you_address ul li a h3 {
-  font-size: 16px; }
+  font-size: 14px; }
 
 .home_twitter_timeline {
   border: thin solid #d8d8d8;
@@ -1591,6 +1600,9 @@ figure.main_image {
     height: 44px;
     color: #24475e;
     font-size: 20px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
     border: none;
     background: rgba(255, 255, 255, 0.5); }
     figure.main_image .article_gallery_btn:hover {

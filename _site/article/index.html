@@ -297,14 +297,16 @@
                     <h1>
                         LA CEVICHERIA: UNE EXPLOSION DE SAVEURS
                         PÉRUVIENNES À IXELLES
+
+                        <img src="../assets/lib/swipebox/images/icons.svg" alt="">
                     </h1>
 
                     <figure class="main_image">
                         <img src="../assets/images/article_img.png" alt="">
 
-                        <button class="article_gallery_btn">
+                        <a class="article_gallery_btn swipebox" href="../assets/images/article_img.png">
                             <i class="fa fa-clone" aria-hidden="true"></i>
-                        </button>
+                        </a>
 
                     </figure>
 
@@ -705,7 +707,17 @@
 
             function _callGallery() {
                 //add body_img class
-                $(".content_body").find("img").addClass("body_img");
+                $(".content_body").find("img").each(function () {
+
+                    $(this).wrap("<a href='" + $(this).attr("src") + "' class='swipebox'></a>");
+
+                });
+
+                $("a.swipebox,.article_gallery_btn").swipebox();
+
+                $("a.swipebox").click(function (e) {
+                    e.preventDefault();
+                });
 
 
             }

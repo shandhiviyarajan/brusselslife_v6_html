@@ -568,6 +568,7 @@
 .around_you_address,
 .home_block_agenda_list {
   ul li {
+    position: relative;
     a {
       height: auto;
       overflow: visible;
@@ -618,9 +619,17 @@
 
 .around_you_address {
   ul li {
+    button.video_play {
+      left: 108px;
+      font-size: 16px;
+      bottom: 0px;
+      width:32px;
+      height:32px;
+
+    }
     a {
       h3 {
-        font-size: 16px;
+        font-size: 14px;
       }
       p {
 
