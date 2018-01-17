@@ -305,6 +305,7 @@ header.restaurant {
   position: absolute;
   width: 100%;
   bottom: 0px;
+  z-index: 2;
 
   .category_title {
     padding: 10px 0px 13px 0px;

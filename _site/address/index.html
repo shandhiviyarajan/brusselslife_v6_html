@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="../assets/favicon.png"/>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- cdn css -->
-    <link rel="stylesheet" type="text/css" href="../assets/frameworks/boilerplate/normalize.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../assets/frameworks/boilerplate/normalize.css"/>-->
     <link rel="stylesheet" type="text/css"
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
@@ -27,13 +27,13 @@
     <link rel="stylesheet" href="../assets/lib/slider/owl.carousel.min.css"/>
     <link rel="stylesheet" href="../assets/lib/slider/owl.theme.default.min.css"/>
 
-    <link rel="stylesheet" href="../assets/lib/swipebox/js/swipebox.css"/>
+    <link rel="stylesheet" href="../assets/lib/swipebox/css/swipebox.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
     <!-- custom-css -->
     <link rel="stylesheet" href="../assets/css/app.css"/>
 
 
-    <script src="../assets/frameworks/boilerplate/modernizr.min.js"></script>
+    <!--<script src="../assets/frameworks/boilerplate/modernizr.min.js"></script>-->
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -147,7 +147,7 @@
 
 <header>
     <a href="#" id="side_menu_trigger">
-        <i class="fa fa-menu"></i>
+        <i class="fa fa-bars"></i>
     </a>
     <div id="logo">
         <a href="/">
@@ -194,46 +194,73 @@
             <li>
                 <a href="/home">
                     <i class="fa fa-home"></i>
+                    <span>
+                        <i class="fa fa-home"></i>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     BXL PRATIQUE
+                    <span>
+                                BXL PRATIQUE
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     BOIRE ET MANGER
+                    <span>
+                         BOIRE ET MANGER
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     SORTIES
+                    <span>
+                        SORTIES
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     SHOPPING
+                    <span>
+                        SHOPPING
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     BIEN-ETRE
+                    <span>
+                         BIEN-ETRE
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     SPORTS
+                    <span>
+                        SPORTS
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     HOTELS & LOGEMENT
+                    <span>
+                         HOTELS & LOGEMENT
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    AGENDA
+                    <i class="fa fa-calendar"></i> AGENDA
+                    <span>
+                      <i class="fa fa-calendar"></i> AGENDA
+                    </span>
                 </a>
             </li>
         </ul>
@@ -241,19 +268,22 @@
 </header>
 <section id="page_search"
          style="background:url('/assets/images/section_images/home.jpg') center bottom no-repeat; background-size:cover;">
-
-    <!--<h2 class="tag_line">-->
-    <!--Where you going to shop today ?-->
-    <!--</h2>-->
-
     <form action="#" class="home">
-
-        <input type="text" placeholder="Address, keywords, shops..."/>
-        <button type="submit">Search</button>
-
+        <input class="search_input" type="text" placeholder="Address, keywords, shops..."/>
+        <button class="search_btn" type="submit">
+            <div>
+                <div class="text">
+                    <span><img src="../assets/images/right-arrow.png" alt=""></span>
+                    <span>Search</span>
+                </div>
+            </div>
+        </button>
     </form>
-
+    <div class="overlay"></div>
 </section>
+<div class="clients_info">
+    <img src="../assets/images/clients2.gif" alt="">
+</div>
 <div class="breadcrumb">
     <section class="container">
         <div class="row">
@@ -698,54 +728,154 @@
                         </h3>
                     </a>
                 </section>
-
                 <section class="right_block address_overlay_block">
+                    <figure>
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-map-marker">
 
-                    <div>
-                        <figure>
-                            <div>
-                                <a href="#">
-                                    <i class="fa fa-map-marker">
+                                </i>
+                                <p>
+                                    Best Hotel & restaurant around you
+                                </p>
+                                <h3>
+                                    Brasserie de Prince d'Orange
+                                </h3>
+                                <p>
+                                    Avenue du Price d'orange,1 <br> 1180 Brussels
 
-                                    </i>
-                                    <p>
-                                        Best Hotel & restaurant around you
-                                    </p>
-                                    <h3>
-                                        Brasserie de Prince d'Orange
-                                    </h3>
-                                    <p>
-                                            Avenue du Price d'orange,1 <br> 1180 Brussels
-
-                                    </p>
-                                </a>
-                            </div>
-                            <img src="../assets/images/coffee_shop.jpg" alt="">
-                        </figure>
-                    </div>
-
+                                </p>
+                            </a>
+                        </div>
+                        <img src="../assets/images/coffee_shop.jpg" alt="">
+                    </figure>
                 </section>
-                <section class="right_block address_same_category">
+                <section class="right_block recent_article">
+                    <div class="title">
+                        <h2>
+                            Recent <span>
+                            articles
+                        </span>
+                        </h2>
+                    </div>
                     <ul>
-                        <li class="full">
+                        <li>
                             <a href="#">
                                 <figure>
-                                   <div>
-                                       <i class="fa fa-map-marker">
 
-                                       </i>
-                                       <h3>
-                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                       </h3>
-                                       <p>
-                                           Little touch - Coiffure <br> <span>
-                                        - Ixelles
-                                    </span>
-                                       </p>
-                                   </div>
+                                    <img src="../assets/images/article_1.jpg" alt="">
+                                </figure>
+                                <h2>
+                                    TERO restaurant : la nouvelle cuisine à Bruxelles
+                                </h2>
+                                <p>
+                                    <em>
+                                        Créé le 20/12/2017 - Dernière mise à jour le 20/12/2017
+                                    </em>
+                                </p>
+
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+
                                     <img src="../assets/images/food_img.jpg" alt="">
                                 </figure>
+                                <h2>
+                                    Donki Burrito: le premier fresh fast-food mexicain à Bruxelles !
+                                </h2>
+                                <p>
+                                    <em>
+                                        Créé le 20/12/2017 - Dernière mise à jour le 20/12/2017
+                                    </em>
+                                </p>
+
+                                <div class="clearfix"></div>
                             </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+
+                                    <img src="../assets/images/article_img_2.jpg" alt="">
+                                </figure>
+                                <h2>
+                                    Six endroits cosy pour manger sur le pouce à midi
+                                </h2>
+                                <p>
+                                    <em>
+                                        Créé le 20/12/2017 - Dernière mise à jour le 20/12/2017
+                                    </em>
+                                </p>
+
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+
+                                    <img src="../assets/images/article_img_3.jpg" alt="">
+                                </figure>
+                                <h2>
+                                    Kokuban: les ramens comme on les aime !
+                                </h2>
+                                <p>
+                                    <em>
+                                        Créé le 20/12/2017 - Dernière mise à jour le 20/12/2017
+                                    </em>
+                                </p>
+
+
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+
+                                    <img src="../assets/images/address_1.jpg" alt="">
+                                </figure>
+                                <h2>
+                                    Quelle sauce choisir avec vos frites?
+                                </h2>
+                                <p>
+                                    <em>
+                                        Créé le 20/12/2017 - Dernière mise à jour le 20/12/2017
+                                    </em>
+                                </p>
+
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+                <section class="right_block around_you_address">
+                    <div class="title">
+                        <h2>
+                            Addresses <span> around you</span>
+                        </h2>
+                    </div>
+                    <ul>
+                        <li class="full">
+                            <figure>
+                                <div>
+                                    <a href="#">
+                                        <i class="fa fa-map-marker"></i>
+                                        <h3>
+                                            Brasserie de Prince d'Orange
+                                        </h3>
+                                        <p>
+                                            Avenue du Price d'orange,1 <br> 1180 Brussels
+
+                                        </p>
+                                    </a>
+                                </div>
+                                <img src="../assets/images/coffee_shop.jpg" alt="">
+                            </figure>
                         </li>
                         <li>
                             <a href="#">
@@ -753,7 +883,7 @@
                                     <div class="address_pin">
                                         <i class="fa fa-map-marker"></i>
                                     </div>
-                                    <img src="../assets/images/coffee_shop.jpg" alt="">
+                                    <img src="../assets/images/food_img.jpg" alt="">
                                 </figure>
                                 <h3>
                                     Bars à vins à Bruxelles: nos coups de cœur
@@ -787,94 +917,26 @@
                                 <div class="clearfix"></div>
                             </a>
                         </li>
-                    </ul>
-                </section>
-                <section class="right_block recent_article">
-                    <div class="title">
-                        <h2>
-                            Recent <span>
-                            articles
-                        </span>
-                        </h2>
-                    </div>
-                    <ul>
-
                         <li>
                             <a href="#">
                                 <figure>
-                                    
-                                    <img src="../assets/images/article_1.jpg" alt="">
-                                </figure>
-                                <h2>
-                                    Bars à vins à Bruxelles: nos coups de cœur
-                                </h2>
-                                <p>
-                                    Winery s'est récemment installé à Boitsfort, L’établissement est
-                                </p>
-                                <div class="clearfix"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    
-                                    <img src="../assets/images/article_img_2.jpg" alt="">
-                                </figure>
-                                <h2>
-                                    Bars à vins à Bruxelles: nos coups de cœur
-                                </h2>
-                                <p>
-                                    Winery s'est récemment installé à Boitsfort, L’établissement est
-                                </p>
-                                <div class="clearfix"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    
+                                    <div class="address_pin">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
                                     <img src="../assets/images/article_img_3.jpg" alt="">
                                 </figure>
-                                <h2>
+                                <h3>
                                     Bars à vins à Bruxelles: nos coups de cœur
-                                </h2>
+                                </h3>
                                 <p>
-                                    Winery s'est récemment installé à Boitsfort, L’établissement est
+                                    Brassere Wayez <br>
+                                    <span>
+                                                     - Ixelles
+                                                 </span>
                                 </p>
                                 <div class="clearfix"></div>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    
-                                    <img src="../assets/images/food_img.jpg" alt="">
-                                </figure>
-                                <h2>
-                                    Bars à vins à Bruxelles: nos coups de cœur
-                                </h2>
-                                <p>
-                                    Winery s'est récemment installé à Boitsfort, L’établissement est
-                                </p>
-                                <div class="clearfix"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <figure>
-                                    
-                                    <img src="../assets/images/article_1.jpg" alt="">
-                                </figure>
-                                <h2>
-                                    Bars à vins à Bruxelles: nos coups de cœur
-                                </h2>
-                                <p>
-                                    Winery s'est récemment installé à Boitsfort, L’établissement est
-                                </p>
-                                <div class="clearfix"></div>
-                            </a>
-                        </li>
-
                     </ul>
                 </section>
                 <section class="right_block related_article">
@@ -887,19 +949,16 @@
                         <li class="full">
                             <a href="#">
                                 <figure>
-                                    <div class="overlay">
-                                        <p>
-                                            <i class="fa fa-heart"></i>
-                                            <span> 08</span>
-                                        </p>
-                                    </div>
+
                                     <img src="../assets/images/article_1.jpg" alt="">
                                 </figure>
                                 <h2>
-                                    4 façons insolites pour dîner ou souper à Bruxelles.
+                                    Évènement gourmand
                                 </h2>
                                 <p>
-                                    Pour bien manger à Bruxelles et passer un bon moment, le restaurant classique n'est plus la seule alternative. On vous fait découvrir 3 autres bons moyens de bien manger de façon originale.
+                                    <em>
+                                        Créé le 20/12/2017 - Dernière mise à jour le 20/12/2017
+                                    </em>
                                 </p>
                                 <div class="clearfix"></div>
                             </a>
@@ -908,13 +967,15 @@
                             <a href="#">
                                 <figure>
 
-                                    <img src="../assets/images/article_1.jpg" alt="">
+                                    <img src="../assets/images/article_img_4.jpg" alt="">
                                 </figure>
                                 <h2>
-                                    Bars à vins à Bruxelles: nos coups de cœur
+                                    Une journée de concierge au Stanhope
                                 </h2>
                                 <p>
-                                    Winery s'est récemment installé à Boitsfort, L’établissement est
+                                    <em>
+                                        Créé le 20/12/2017 - Dernière mise à jour le 20/12/2017
+                                    </em>
                                 </p>
                                 <div class="clearfix"></div>
                             </a>
@@ -922,13 +983,15 @@
                         <li>
                             <a href="#">
                                 <figure>
-                                    <img src="../assets/images/article_1.jpg" alt="">
+                                    <img src="../assets/images/article_img_2.jpg" alt="">
                                 </figure>
                                 <h2>
-                                    Bars à vins à Bruxelles: nos coups de cœur
+                                    Les suites présidentielles des hôtels bruxellois
                                 </h2>
                                 <p>
-                                    Winery s'est récemment installé à Boitsfort, L’établissement est
+                                    <em>
+                                        Créé le 20/12/2017 - Dernière mise à jour le 20/12/2017
+                                    </em>
                                 </p>
                                 <div class="clearfix"></div>
                             </a>
@@ -942,7 +1005,7 @@
             <div class="col-md-8 ">
                 <div class="social_share_small">
                     <p>
-                        Share this article
+                        Share this address
                     </p>
                     <div class="addthis_inline_share_toolbox"></div>
                 </div>
@@ -955,18 +1018,16 @@
                             <div>
                                 <p>
                                     <small>
-                                        Next article
+                                        Next address
                                     </small>
                                 </p>
                                 <h2>
                                     Bars a vins a Bruxelles:nos coups de coeur
                                 </h2>
                                 <p>
-                                    <em>
-                                        <strong>
-                                            Créé le 07/09/2017 - Dernière mise à jour le 08/09/2017
-                                        </strong>
-                                    </em>
+                                    le coffee shop <span>
+                                    - Brussels 
+                                </span>
                                 </p>
                             </div>
                             <img src="../assets/images/article_full.png" alt="">
@@ -1221,41 +1282,39 @@
 </footer>
 
 
+<!-- Modal -->
+<div class="modal fade agenda_video" id="video_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+
+                <div class="modal-date">
+                    January 14 to March 19 | 2018
+                </div>
+                <div class="modal-title">
+                    La Ligue d'Improvisation Belge Professionnelle
+                </div>
+            </div>
+            <div class="modal-body">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-595f7dad07e72d1b"></script>
 
 <script type="text/javascript">
-    var open = true;
-    var menuButton = $('#side_menu_trigger');
-    var swiper = new Swiper('#menu_swiper', {
-        slidesPerView: 'auto',
-        initialSlide: 1,
-        resistanceRatio: 1000,
-        slideToClickedSlide: true,
-        on: {
-            init: function () {
-                var slider = this;
-                menuButton.click(function () {
-                    // console.log(slider);
-                    if (open) {
-                        slider.slidePrev();
-                        open = false;
-                    } else {
-                        slider.slideNext();
-                        open = true;
-                    }
 
+    (function ($, window) {
+        'use strict';
 
-                });
-            },
-
-            slideNextTransitionEnd: function () {
-                open = true;
-            },
-            slidePrevTransitionEnd: function () {
-                open = false;
-            }
-        }
-    });
+    })(jQuery, window);
 </script>
 
 </body>

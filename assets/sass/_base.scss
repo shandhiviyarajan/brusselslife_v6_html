@@ -8,11 +8,11 @@ body {
 h1 {
   color: $dark_blue;
   font-family: $baseFont2;
-  font-size: 22px;
-  padding-right: 15px;
+  font-size: 24px;
+  padding-right: 30px;
   font-weight: bold;
   margin: 15px 0px 15px 0px;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 h2, h3, h4, h5, h6 {
@@ -92,7 +92,7 @@ Common classes
 
 .address {
   @extend .publish_date;
-  font-size: 17px;
+  font-size: 14px;
   margin-top: 0px;
 }
 
@@ -120,12 +120,13 @@ Common classes
     color: $dark_grey;
     font-size: 13px;
     margin: 0px;
-    font-family:$baseFont;
+    font-family: $baseFont;
     a {
       text-decoration: none;
       font-size: 13px;
       color: $light_blue;
-      font-weight: bold;       font-family:$baseFont;
+      font-weight: bold;
+      font-family: $baseFont;
 
       &:hover {
         color: $dark_blue;
@@ -181,6 +182,7 @@ Common classes
 
 .main_image {
   margin-left: -30px;
+  margin-bottom: 15px;
   img {
     width: 100%;
   }
@@ -269,6 +271,7 @@ Common classes
 .right_block {
   position: relative;
   padding: 15px 0px 15px 0px;
+  border-top: thin solid #d8d8d8;
   .title {
     h2 {
       margin: 0px 0px 15px 0px;
@@ -290,8 +293,14 @@ Common classes
     font-size: 16px;
   }
   p.address, p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
+    em {
+      color: $darker_grey;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1.2em;
+    }
   }
   div.col-md-6 {
     a {
@@ -426,7 +435,7 @@ Common classes
 
     }
   }
-  border-top: thin solid #f5f5f5;
+
 }
 
 .social_share,
@@ -657,10 +666,116 @@ figure {
   }
 }
 
-.clients_info {
+.clients_info,
+.clients_info_small {
   img {
     display: block;
     margin: 5px auto;
+  }
+}
+
+.video_play {
+  color: #fff;
+  background: #2196F3;
+  display: block;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  font-size: 26px;
+  position: absolute;
+  z-index: 400;
+  right: 15px;
+  bottom: 15px;
+  padding-top: 3px;
+  padding-left: 10px;
+  border: none;
+
+  &:hover {
+    background: #fff;
+    color: #2196F3;
+  }
+}
+
+li {
+
+  figure {
+    > div {
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -ms-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease;
+    }
+  }
+  &:hover {
+    figure {
+      > div {
+        background: transparent;
+      }
+    }
+  }
+}
+
+a {
+  div.overlay {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  &:hover {
+    div.overlay {
+      opacity: 0;
+    }
+  }
+}
+
+#video_modal {
+
+  .modal-dialog {
+    width: 750px;
+  }
+  .modal-header {
+    background: #000;
+    border: none;
+
+    button.close {
+      color: #fff;
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      top: 0px;
+      right: -44px;
+    }
+
+    div.modal-date {
+      color: $orange;
+      font-weight: bold;
+      font-family: $baseFont;
+      font-size: 14px;
+      background: #000;
+      display: inline-block;
+    }
+    div.modal-title {
+      font-family: $baseFont2;
+      font-size: 18px;
+      font-weight:bold;
+      margin:7px 0px;
+      color: #fff;
+    }
+
+  }
+  .modal-content {
+    border: none;
+    height: 450px;
+    border-radius: 0px;
+
+  }
+
+  .modal-body {
+    padding: 0px;
+
   }
 }
 

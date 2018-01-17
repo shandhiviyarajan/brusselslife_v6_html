@@ -12,6 +12,7 @@
 
 #address_gallery {
   margin-left: -30px;
+  position: relative;
 
   img {
     width: 100%;
@@ -402,7 +403,7 @@
       height: 100%;
       background: rgba(38, 62, 78, 0.5);
       text-align: center;
-      
+
       i.fa {
         color: #fff;
         font-size: 36px;
@@ -481,11 +482,12 @@
       font-family: $baseFont2;
     }
     h3 {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: bold;
       color: $dark_blue;
       font-style: italic;
       margin: 7px 0px;
+      line-height: 1.4em;
     }
 
     p {
@@ -497,4 +499,6 @@
     }
   }
 }
+
+
 

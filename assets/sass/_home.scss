@@ -229,13 +229,13 @@
     line-height: 1.4em;
     text-align: left;
     position: relative;
-    z-index: 1100;
+    z-index: 400;
     margin-bottom: 15px;
   }
 
   p.publish_date {
     position: relative;
-    z-index: 1100;
+    z-index: 400;
     font-family: $baseFont2;
     font-style: italic;
     color: #fff;
@@ -387,8 +387,11 @@
     color: $orange;
     font-family: $baseFont;
     font-weight: bold;
-    font-style: italic;
+    background: #000;
+    padding: 3px;
+    display: inline-block;
   }
+
 }
 
 .home_block_right {
@@ -578,7 +581,9 @@
         line-height: 1.4em;
       }
       p {
-        font-size: 14px;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 5px 0px 0px 0px;
         span {
           color: $light_blue;
         }
@@ -611,14 +616,107 @@
   }
 }
 
+.around_you_address {
+  ul li {
+    a {
+      h3 {
+        font-size: 16px;
+      }
+      p {
+
+      }
+    }
+  }
+}
+
 .home_twitter_timeline {
   border: thin solid #d8d8d8;
   padding: 15px 0px 0px 15px;
   overflow: hidden;
-  height: 361px;
+  height: 220px;
   iframe {
     margin-top: -59px !important;
   }
+}
+
+.around_you_address {
+  ul {
+    li.full {
+      figure {
+        position: relative;
+        div {
+          a {
+            display: block;
+            text-decoration: none;
+
+          }
+          z-index: 100;
+
+          position: absolute;
+          padding-top: 44px;
+          width: 100%;
+          height: 100%;
+          background: rgba(38, 62, 78, 0.5);
+          text-align: center;
+
+          i.fa {
+            color: #fff;
+            font-size: 36px;
+          }
+          h3, p {
+            font-family: $baseFont2;
+            color: #fff;
+          }
+          p {
+            font-style: italic;
+            font-weight: bold;
+            margin: 15px 0px;
+          }
+
+          h3 {
+            font-size: 18px;
+          }
+
+        }
+        img {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}
+
+.home_block_agenda_list {
+  a {
+    margin-bottom: 15px !important;
+  }
+
+  a div.agenda-date-title div.ag-date {
+    font-size: 14px !important;
+    font-weight: bold;
+    color: $orange;
+    display: inline-block;
+    background: #000;
+    padding: 3px;
+  }
+
+  ul {
+    li {
+      a {
+        div.agenda-date-title {
+          position: relative;
+          left: auto;
+          bottom: auto;
+          float: left;
+          color: $dark_blue;
+          font-size: 16px;
+          width: 224px;
+        }
+      }
+    }
+  }
+
 }
 
 div.title {
