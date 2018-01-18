@@ -324,6 +324,9 @@ Common classes
 .no-padding {
   padding: 0px 0px 0px 0px !important; }
 
+.no-border {
+  border: none; }
+
 .star_values {
   position: relative;
   height: 44px;
@@ -780,6 +783,9 @@ header.restaurant {
 .home_section_block_right div.row div.col-md-6:first-child {
   border-right: thin solid #efefef; }
 
+.home_section_block_right div.row div.col-md-6:last-child {
+  padding: 0px 0px 0px 15px; }
+
 .home_block_article_2 {
   height: auto;
   border-radius: 44px 0px 0px 0px;
@@ -817,18 +823,19 @@ header.restaurant {
   .home_block_article_2 h4 {
     font-family: "Merriweather", serif;
     color: #24475e;
-    font-size: 18px;
-    line-height: 1.2em;
+    font-size: 16px;
+    line-height: 1.4em;
     text-align: left;
     position: relative;
-    z-index: 1100;
+    z-index: 400;
     margin: 10px 0px 15px 0px; }
   .home_block_article_2 p {
-    font-size: 13px;
-    color: #656565; }
+    font-size: 14px;
+    font-weight: 400;
+    color: #464646; }
   .home_block_article_2 p.publish_date, .home_block_article_2 p.summary, .home_block_article_2 p.address {
     position: relative;
-    z-index: 1100;
+    z-index: 400;
     font-family: "Merriweather", serif;
     font-style: italic;
     color: #656565;
@@ -846,7 +853,7 @@ header.restaurant {
       position: absolute;
       width: 100%;
       z-index: 10;
-      top: 60px; }
+      top: 96px; }
       .home_block_address > a > div h4, .home_block_address > a > div p {
         font-family: "Merriweather", serif;
         color: #fff;
@@ -939,7 +946,7 @@ header.restaurant {
 
 .home_block_author {
   height: 320px;
-  border-radius: 0px 0px 0px 44px;
+  border-radius: 0px 0px 0px 64px;
   position: relative;
   padding: 72px 30px 30px 30px;
   line-height: 1.7em;
@@ -976,7 +983,7 @@ header.restaurant {
     height: 100%;
     width: 100%;
     top: 0px;
-    border-radius: 0px 0px 0px 44px;
+    border-radius: 0px 0px 0px 64px;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
     -ms-transition: .3s ease;
@@ -1066,8 +1073,17 @@ header.restaurant {
 .home_block_agenda {
   background: #253037;
   margin-left: -15px;
+  margin-right: -15px;
   margin-top: 15px;
   padding: 15px 30px 15px 30px; }
+  .home_block_agenda a {
+    display: block;
+    min-height: 220px; }
+  .home_block_agenda button.video_play {
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    bottom: 96px; }
   .home_block_agenda img {
     width: 100%;
     margin-bottom: 7px; }
@@ -1077,16 +1093,20 @@ header.restaurant {
     font-family: "Merriweather", serif;
     margin-bottom: 15px; }
     .home_block_agenda h3 span {
-      color: #4c7f90; }
+      color: #76bac5; }
   .home_block_agenda p {
-    color: #fff; }
+    color: #fff;
+    font-size: 16px; }
   .home_block_agenda p.agenda_date {
     color: #fd865e;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     background: #000;
     padding: 3px;
-    display: inline-block; }
+    display: inline-block;
+    font-size: 14px;
+    bottom: 90px;
+    left: 30px; }
 
 .home_block_right h3 {
   font-family: "Merriweather", serif;
@@ -1233,20 +1253,42 @@ header.restaurant {
     .home_block_agenda_list ul li a figure {
       height: auto;
       width: auto; }
-.around_you_address ul li a figure img,
-.home_block_agenda_list ul li a figure img {
-  width: 140px;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=100);
-  -webkit-filter: saturate(100%);
-  filter: saturate(100%);
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -ms-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease; }
+      .around_you_address ul li a figure img,
+      .home_block_agenda_list ul li a figure img {
+        width: 140px;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(saturate=100);
+        -webkit-filter: saturate(100%);
+        filter: saturate(100%);
+        -webkit-transition: .3s ease;
+        -moz-transition: .3s ease;
+        -ms-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease; }
 .around_you_address ul li.full a figure img,
 .home_block_agenda_list ul li.full a figure img {
   width: 100%; }
+
+.home_block_agenda_list div.title h2 {
+  color: #fff; }
+.home_block_agenda_list a {
+  margin-bottom: 15px !important; }
+.home_block_agenda_list a div.agenda-date-title div.ag-date {
+  font-size: 14px !important;
+  font-weight: bold;
+  color: #fd865e;
+  display: inline-block;
+  background: #000;
+  padding: 3px; }
+.home_block_agenda_list ul li a div.agenda-date-title {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  float: left;
+  color: #fff;
+  width: 224px; }
+  .home_block_agenda_list ul li a div.agenda-date-title div.ag-title {
+    font-size: 16px;
+    font-weight: 400; }
 
 .around_you_address ul li button.video_play {
   left: 108px;
@@ -1298,24 +1340,6 @@ header.restaurant {
       font-size: 18px; }
   .around_you_address ul li.full figure img {
     width: 100%; }
-
-.home_block_agenda_list a {
-  margin-bottom: 15px !important; }
-.home_block_agenda_list a div.agenda-date-title div.ag-date {
-  font-size: 14px !important;
-  font-weight: bold;
-  color: #fd865e;
-  display: inline-block;
-  background: #000;
-  padding: 3px; }
-.home_block_agenda_list ul li a div.agenda-date-title {
-  position: relative;
-  left: auto;
-  bottom: auto;
-  float: left;
-  color: #24475e;
-  font-size: 16px;
-  width: 224px; }
 
 div.title iframe {
   float: right; }
@@ -2009,7 +2033,7 @@ section.agenda-container {
   display: block;
   position: relative;
   margin-bottom: 30px;
-  height: 228px;
+  height: 300px;
   overflow: hidden; }
   .block_event_list a div.agenda-date-title {
     position: absolute;
@@ -2055,7 +2079,7 @@ section.agenda-container {
     position: absolute; }
   .block_event_list a figure {
     overflow: hidden;
-    height: 228px;
+    height: 300px;
     display: block;
     width: 100%; }
   .block_event_list a img {
@@ -2290,7 +2314,7 @@ section block orverrides
     line-height: 1.4em;
     text-align: left;
     position: relative;
-    z-index: 1100;
+    z-index: 400;
     margin-bottom: 15px; }
   .section_block_2 p.publish_date, .section_block_2 p.summary, .section_block_2 p.address,
   .section_block_3 p.publish_date,
@@ -2309,8 +2333,10 @@ section block orverrides
   padding: 0px 0px 15px 0px;
   margin-top: 15px;
   height: auto; }
-  .section_block_3 figure img {
-    width: 100%; }
+  .section_block_3 figure {
+    padding: 0px 15px; }
+    .section_block_3 figure img {
+      width: 100%; }
   .section_block_3:after {
     display: none;
     content: '';
@@ -2323,10 +2349,12 @@ section block orverrides
     top: 0px;
     border-radius: 0px 0px 0px 44px; }
   .section_block_3 h4 {
-    padding: 30px 15px 3px 15px; }
+    padding: 30px 15px 3px 15px;
+    font-size: 16px; }
   .section_block_3 p {
-    font-family: "Merriweather", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    font-weight: 400;
     color: #fff;
     line-height: 1.4em;
     padding: 7px 15px 0px 15px; }
@@ -2395,7 +2423,17 @@ section block orverrides
   .address_suggestions section figure {
     position: relative; }
   .address_suggestions section img {
-    width: 100%; }
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+    width: 100%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
 .address_suggestions div.shape {
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
@@ -2507,6 +2545,12 @@ section block orverrides
   .address_suggestions div.shape.orange:before {
     border-bottom: 30px solid #ff5722;
     opacity: 0.75; }
+.address_suggestions section.hover img {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  transform: scale(1.25); }
 .address_suggestions section.hover div.shape {
   top: 64px; }
   .address_suggestions section.hover div.shape h2 {
@@ -2543,7 +2587,7 @@ section block orverrides
     font-family: "Merriweather", serif;
     font-size: 13px;
     color: #464646;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 1.4em;
     text-decoration: none; }
   .featured_restaurant .most_read_articles p.publish_date, .featured_restaurant .most_read_articles p.summary, .featured_restaurant .most_read_articles p.address {
@@ -2702,17 +2746,16 @@ section block orverrides
         width: 100%; }
     .near_by_address a h3 {
       color: #24475e;
-      font-size: 13px;
-      line-height: 1.3em;
+      font-size: 14px;
+      line-height: 1.4em;
       margin-bottom: 7px;
       font-style: italic;
       font-weight: bold; }
     .near_by_address a p {
-      font-size: 12px;
-      line-height: 1.3em;
-      font-style: italic;
+      font-size: 13px;
+      line-height: 1.4em;
       color: #76bac5;
-      font-weight: bold; }
+      font-weight: 400; }
       .near_by_address a p strong {
         color: #464646; }
     .near_by_address a:hover h3, .near_by_address a:hover p {
@@ -2788,7 +2831,10 @@ section block orverrides
         text-decoration: none; }
       .more_articles ul li figure {
         float: left;
-        margin-right: 15px; }
+        margin-right: 15px;
+        width: 250px; }
+        .more_articles ul li figure img {
+          width: 100%; }
       .more_articles ul li h3, .more_articles ul li p {
         font-family: "Merriweather", serif; }
       .more_articles ul li h3 {
@@ -2797,7 +2843,7 @@ section block orverrides
         color: #464646;
         line-height: 1.5em; }
       .more_articles ul li p {
-        font-size: 12px;
+        font-size: 13px;
         color: #656565; }
 
 @media (min-width: 992px) {
