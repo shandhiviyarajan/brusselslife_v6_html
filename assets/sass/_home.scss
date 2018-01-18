@@ -37,8 +37,8 @@
 
 .home_section_block_right {
   div.row {
-    div.col-md-6 {
-      padding-right: 0px;
+    div.col-md-6:last-child {
+     padding: 0px 0px 0px 15px;
     }
   }
 }
@@ -89,11 +89,11 @@
   h4 {
     font-family: $baseFont2;
     color: $dark_blue;
-    font-size: 18px;
-    line-height: 1.2em;
+    font-size: 16px;
+    line-height: 1.4em;
     text-align: left;
     position: relative;
-    z-index: 1100;
+    z-index: 400;
     margin: 10px 0px 15px 0px;
   }
   p {
@@ -104,7 +104,7 @@
 
   p.publish_date {
     position: relative;
-    z-index: 1100;
+    z-index: 400;
     font-family: $baseFont2;
     font-style: italic;
     color: $dark_grey;
