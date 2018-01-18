@@ -365,6 +365,17 @@
   margin-left: -15px;
   margin-top: 15px;
   padding: 15px 30px 15px 30px;
+  a {
+    display: block;
+    min-height: 220px;
+  }
+
+  button.video_play {
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    bottom: 60px;
+  }
 
   img {
     width: 100%;
@@ -377,11 +388,12 @@
     margin-bottom: 15px;
 
     span {
-      color: $light_blue;
+      color: $lighter_blue;
     }
   }
   p {
     color: #fff;
+    font-size: 16px;
   }
   p.agenda_date {
     color: $orange;
@@ -390,6 +402,10 @@
     background: #000;
     padding: 3px;
     display: inline-block;
+    position: absolute;
+    font-size: 14px;
+    bottom: 60px;
+    left: 30px;
   }
 
 }
@@ -567,6 +583,7 @@
 
 .around_you_address,
 .home_block_agenda_list {
+
   ul li {
     position: relative;
     a {
@@ -593,18 +610,12 @@
       figure {
         height: auto;
         width: auto;
-      }
-    }
-
-  }
-  ul li {
-    a {
-      figure {
         img {
           width: 140px;
         }
       }
     }
+
   }
   ul li.full {
     a {
@@ -617,14 +628,57 @@
   }
 }
 
+.home_block_agenda_list {
+  div.title {
+    h2 {
+      color: #fff;
+
+    }
+  }
+  a {
+    margin-bottom: 15px !important;
+  }
+
+  a div.agenda-date-title div.ag-date {
+    font-size: 14px !important;
+    font-weight: bold;
+    color: $orange;
+    display: inline-block;
+    background: #000;
+    padding: 3px;
+  }
+
+  ul {
+    li {
+      a {
+        div.agenda-date-title {
+          position: relative;
+          left: auto;
+          bottom: auto;
+          float: left;
+          color: #fff;
+
+          width: 224px;
+
+          div.ag-title {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+}
+
 .around_you_address {
   ul li {
     button.video_play {
       left: 108px;
       font-size: 16px;
       bottom: 0px;
-      width:32px;
-      height:32px;
+      width: 32px;
+      height: 32px;
 
     }
     a {
@@ -694,38 +748,6 @@
 
     }
   }
-}
-
-.home_block_agenda_list {
-  a {
-    margin-bottom: 15px !important;
-  }
-
-  a div.agenda-date-title div.ag-date {
-    font-size: 14px !important;
-    font-weight: bold;
-    color: $orange;
-    display: inline-block;
-    background: #000;
-    padding: 3px;
-  }
-
-  ul {
-    li {
-      a {
-        div.agenda-date-title {
-          position: relative;
-          left: auto;
-          bottom: auto;
-          float: left;
-          color: $dark_blue;
-          font-size: 16px;
-          width: 224px;
-        }
-      }
-    }
-  }
-
 }
 
 div.title {

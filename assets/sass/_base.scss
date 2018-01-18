@@ -469,6 +469,10 @@ Common classes
   padding: 0px 0px 0px 0px !important;
 }
 
+.no-border {
+  border: none;
+}
+
 .star_values {
   position: relative;
   height: 44px;
@@ -760,8 +764,8 @@ a {
     div.modal-title {
       font-family: $baseFont2;
       font-size: 18px;
-      font-weight:bold;
-      margin:7px 0px;
+      font-weight: bold;
+      margin: 7px 0px;
       color: #fff;
     }
 
