@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Brusselslife.be | Belgium life style site | Brussels news Brusselslife.be | version 5.3</title>
+    <title> Brusselslife.be | Belgium life style site | Brussels news, restaurants, shopping, events &amp; happenings. Brusselslife.be | version 5.3</title>
     <meta property="og:image" content=""/>
     <meta property="og:title" content=""/>
     <meta property="og:url" content=""/>
@@ -1369,7 +1369,7 @@
         <div class="col-md-12">
             <div class="block_title">
                 <h3>
-                    Near by <span>restaurants</span>
+                    Around you <span>addressess</span>
                 </h3>
             </div>
         </div>
@@ -1540,7 +1540,6 @@
 
 <!-- scripts -->
 <script type="text/javascript">
-
     (function ($, window) {
         'use strict';
         var Home = function () {
@@ -1562,12 +1561,13 @@
             }
 
             function _searchChangeArrow() {
+                var search_btn = $(".search_btn");
                 $(".search_input").keyup(function () {
                     console.log($(this).val().length);
                     if ($(this).val().length >= 3) {
-                        $(".search_btn").addClass("active");
+                        search_btn.addClass("active");
                     } else {
-                        $(".search_btn").removeClass("active");
+                        search_btn.removeClass("active");
                     }
                 });
             }
@@ -1575,16 +1575,17 @@
             function _playVideo() {
 
                 var video_modal = $("#video_modal");
+                var modal_body = video_modal.find(".modal-body");
 
                 $(".video_play").on('click', function () {
                     var url = $(this).data("video-src");
                     var player = '<iframe src=' + url + '?rel=0&amp;showinfo=0&amp;start=13" frameborder="0" allow="autoplay; encrypted-media" style="width:100%; height:450px;"></iframe>';
-                    $("#video_modal").find(".modal-body").empty();
-                    $("#video_modal").find(".modal-body").append(player);
-                    $("#video_modal").on('hidden.bs.modal', function (e) {
-                        $("#video_modal").find(".modal-body").empty();
+                    modal_body.empty();
+                    modal_body.append(player);
+                    video_modal.on('hidden.bs.modal', function (e) {
+                        modal_body.empty();
                     });
-                    $('#video_modal').modal('show');
+                    video_modal.modal('show');
 
                 });
 
@@ -1599,17 +1600,15 @@
                 }
             }
 
-        }
+        };
         Home().init();
 
 
     })(jQuery, window)
-
-
 </script>
 <footer>
     <div class="footer_img">
-        <img src="assets/images/footer-bg-img.png" alt="">
+        <img src="assets/images/footer_img.png" alt="">
     </div>
     <div class="footer_bottom">
         <div class="container">
@@ -1618,7 +1617,214 @@
                     <img src="assets/images/logo.png" alt=""/>
                 </a>
             </div>
+        </div>
+        <div class="container footer-links">
+            <div class="about-site">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>
+                            Discover more than <br> 12,000 addresses & events
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        Enjoy all the different sections of BrusselsLife.be and discover more than 12,000 addresses and a large choice of events, information and tips and tricks of our writing.
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span style="background:#92e6f2;"></span>
+                        BXL PRACTIQUE
+                    </a>
+                </li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Decoration</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Florists</a></li>
+                <li><a href="#">Opticians</a></li>
 
+                <li>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span style="background:#8246f2;"></span>
+                        BOIRE ET MANGER
+                    </a>
+                </li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Decoration</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Florists</a></li>
+                <li><a href="#">Opticians</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span style="background:#ff63fc;"></span>
+                        SORTIES
+                    </a>
+                </li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Decoration</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Florists</a></li>
+                <li><a href="#">Opticians</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span style="background:#fd6d4f;"></span>
+                        SHOPPING
+                    </a>
+                </li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Decoration</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Florists</a></li>
+                <li><a href="#">Opticians</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span style="background:#269c45;"></span>
+                        BIEN-ETRE
+                    </a>
+                </li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Decoration</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Florists</a></li>
+                <li><a href="#">Opticians</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span style="background:#ff3d46;"></span>
+                        SPORTS
+                    </a>
+                </li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Decoration</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Florists</a></li>
+                <li><a href="#">Opticians</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span style="background:#4960ff;"></span>
+                        HOTELS & LOGEMENT
+                    </a>
+                </li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Decoration</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Florists</a></li>
+                <li><a href="#">Opticians</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span style="background:#fd9000;"></span>
+                        AGENDA
+                    </a>
+                </li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Decoration</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Florists</a></li>
+                <li><a href="#">Opticians</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">About Brusselslife</a>
+                </li>
+                <li>
+                    <a href="#">Our Team</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Careers
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Site map
+                    </a>
+                </li>
+                <li>
+
+                </li>
+            </ul>
+            <ul class="business_links">
+                <li>
+                    <a href="#">
+                        Business
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default">
+                        <i class="fa fa-desktop" aria-hidden="true"></i> Advertise with us
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default">
+                       <i class="fa fa-map-marker"></i> Submit your address
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-default">
+                        <i class="fa fa-calendar"></i> List your events
+                    </a>
+                </li>
+                <li>
+
+                </li>
+
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <div class="footer_social_links">
+        <div class="container">
             <div class="social_links">
                 <a href="#" class="footer_fb"> <i class="fa fa-facebook"></i></a>
                 <a href="#" class="footer_tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -1630,21 +1836,31 @@
                 Copyright 2018 &copy; Brusselslife.be All Rights Reserved. <br>
                 The content and images used on this site are copyright protected and copyrights vests with the respective owners.
             </p>
+
+            <p class="crafted">
+                Crafted with <i class="fa fa-heart"></i> by <a href="#">Brusselslife Team</a>
+            </p>
         </div>
     </div>
+
 
 </footer>
 
 
-<!-- Modal -->
-<div class="modal fade agenda_video" id="video_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
+<!-- Video Modal -->
+<div class="modal fade agenda_video"
+     id="video_modal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel">
+    <div class="modal-dialog"
+         role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close"
                         data-dismiss="modal"
                         aria-label="Close">
-                    <span aria-hidden="true">&times;</span></button>
+                    <span aria-hidden="true"><i class="fa fa-times"></i></span></button>
 
                 <div class="modal-date">
                     January 14 to March 19 | 2018
@@ -1660,16 +1876,9 @@
     </div>
 </div>
 
-
+<!-- add this social sharing tool -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-595f7dad07e72d1b"></script>
 
-<script type="text/javascript">
-
-    (function ($, window) {
-        'use strict';
-
-    })(jQuery, window);
-</script>
 
 </body>
 

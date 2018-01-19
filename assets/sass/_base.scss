@@ -559,89 +559,7 @@ h3.block_sub_title {
   background-color: $yellow;
 }
 
-footer {
-  position: relative;
 
-  .footer_img {
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-  }
-
-  .footer_bottom {
-    background: $dark_blue;
-  }
-
-  .footer_logo {
-    background: $dark_blue;
-    a {
-      outline: 0;
-      display: block;
-      &:after {
-        content: '';
-        border-bottom: thin solid $light_blue;
-        width: 90%;
-        display: block;
-        height: 1px;
-        margin: -40px auto auto auto;
-      }
-    }
-    img {
-      width: 240px;
-      margin: 0 auto;
-      display: block;
-      background: $dark_blue;
-      z-index: 3000;
-      padding: 15px 75px;
-      position: relative;
-    }
-  }
-
-  .social_links {
-    padding: 60px 0px 30px 0px;
-    text-align: center;
-
-    a {
-      display: inline-block;
-      width: 32px;
-      height: 32px;
-      color: $light_blue;
-      text-align: center;
-      font-size: 16px;
-      padding-top: 4px;
-      margin-right: 7px;
-      border-radius: 32px;
-      border: thin solid $light_blue;
-
-      &:hover {
-        color: #fff;
-        border: thin solid $dark_blue;
-      }
-    }
-    a.footer_fb:hover {
-      background: #4960ff;
-    }
-    a.footer_tw:hover {
-      background: #66bbff;
-    }
-    a.footer_in:hover {
-      background: #2655ff;
-    }
-    a.footer_ins:hover {
-      background: black;
-    }
-    a.footer_google:hover {
-      background: #ff3d46;
-    }
-  }
-
-  p.copy_right {
-    text-align: center;
-    font-size: 12px;
-    color: $light_blue;
-  }
-}
 
 figure {
   position: relative;
@@ -780,6 +698,115 @@ a {
   .modal-body {
     padding: 0px;
 
+  }
+}
+
+.brusselslife_team {
+
+  h3 {
+    text-align: Center;
+    margin: 60px 0px;
+    font-family: $baseFont2;
+    
+    
+  }
+
+  section {
+    padding: 15px;
+    border: thin solid #d8d8d8;
+    overflow: hidden;
+
+    &:hover {
+      div.info {
+        -webkit-transform: translateY(-75px);
+        -moz-transform: translateY(-75px);
+        -ms-transform: translateY(-75px);
+        -o-transform: translateY(-75px);
+        transform: translateY(-75px);
+      }
+
+      figure {
+        img {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          -webkit-transform: translateY(-20px);
+          -moz-transform: translateY(-20px);
+          -ms-transform: translateY(-20px);
+          -o-transform: translateY(-20px);
+          transform: translateY(-20px);
+
+          -webkit-transition-delay: 0.1s;
+          -moz-transition-delay: 0.1s;
+          -ms-transition-delay: 0.1s;
+          -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+        }
+      }
+    }
+  }
+  figure {
+    img {
+      -webkit-transition: 0.35s ease;
+      -moz-transition: 0.35s ease;
+      -ms-transition: 0.35s ease;
+      -o-transition: 0.35s ease;
+      transition: 0.35s ease;
+      width: 100%;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+
+    }
+  }
+
+  div.info {
+    -webkit-transition: 0.35s ease;
+    -moz-transition: 0.35s ease;
+    -ms-transition: 0.35s ease;
+    -o-transition: 0.35s ease;
+    transition: 0.35s ease;
+    background: #fff;
+    padding-top: 15px;
+  }
+
+  div.name {
+    font-size: 14px;
+    font-family: $baseFont2;
+    margin-bottom: 5px;
+    color: $dark_grey;
+    font-weight:300;
+
+  }
+
+  div.desig {
+
+    font-size: 17px;
+    font-family: $baseFont2;
+    color: $dark_blue;
+    margin-bottom: 5px;   font-weight:300;
+
+  }
+
+  div.social-links {
+    padding: 15px 0px;
+    a {
+      width: 44px;
+      height: 44px;
+      display: inline-block;
+      border-radius: 44px;
+      background: #1c6dd1;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      padding-top: 9px;
+
+    }
+  }
+
+  div.about {
+    font-style: $baseFont;
+    color: $dark_grey;
+    font-size: 14px;
+    line-height: 1.4em;
   }
 }
 

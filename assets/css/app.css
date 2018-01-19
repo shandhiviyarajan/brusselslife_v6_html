@@ -394,65 +394,6 @@ h3.block_sub_title {
 .block-yellow {
   background-color: #ffcc00; }
 
-footer {
-  position: relative; }
-  footer .footer_img img {
-    display: block;
-    margin: 0 auto; }
-  footer .footer_bottom {
-    background: #24475e; }
-  footer .footer_logo {
-    background: #24475e; }
-    footer .footer_logo a {
-      outline: 0;
-      display: block; }
-      footer .footer_logo a:after {
-        content: '';
-        border-bottom: thin solid #4c7f90;
-        width: 90%;
-        display: block;
-        height: 1px;
-        margin: -40px auto auto auto; }
-    footer .footer_logo img {
-      width: 240px;
-      margin: 0 auto;
-      display: block;
-      background: #24475e;
-      z-index: 3000;
-      padding: 15px 75px;
-      position: relative; }
-  footer .social_links {
-    padding: 60px 0px 30px 0px;
-    text-align: center; }
-    footer .social_links a {
-      display: inline-block;
-      width: 32px;
-      height: 32px;
-      color: #4c7f90;
-      text-align: center;
-      font-size: 16px;
-      padding-top: 4px;
-      margin-right: 7px;
-      border-radius: 32px;
-      border: thin solid #4c7f90; }
-      footer .social_links a:hover {
-        color: #fff;
-        border: thin solid #24475e; }
-    footer .social_links a.footer_fb:hover {
-      background: #4960ff; }
-    footer .social_links a.footer_tw:hover {
-      background: #66bbff; }
-    footer .social_links a.footer_in:hover {
-      background: #2655ff; }
-    footer .social_links a.footer_ins:hover {
-      background: black; }
-    footer .social_links a.footer_google:hover {
-      background: #ff3d46; }
-  footer p.copy_right {
-    text-align: center;
-    font-size: 12px;
-    color: #4c7f90; }
-
 figure {
   position: relative; }
   figure div.address_pin {
@@ -547,6 +488,80 @@ a:hover div.overlay {
   border-radius: 0px; }
 #video_modal .modal-body {
   padding: 0px; }
+
+.brusselslife_team h3 {
+  text-align: Center;
+  margin: 60px 0px;
+  font-family: "Merriweather", serif; }
+.brusselslife_team section {
+  padding: 15px;
+  border: thin solid #d8d8d8;
+  overflow: hidden; }
+  .brusselslife_team section:hover div.info {
+    -webkit-transform: translateY(-75px);
+    -moz-transform: translateY(-75px);
+    -ms-transform: translateY(-75px);
+    -o-transform: translateY(-75px);
+    transform: translateY(-75px); }
+  .brusselslife_team section:hover figure img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s; }
+.brusselslife_team figure img {
+  -webkit-transition: 0.35s ease;
+  -moz-transition: 0.35s ease;
+  -ms-transition: 0.35s ease;
+  -o-transition: 0.35s ease;
+  transition: 0.35s ease;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+.brusselslife_team div.info {
+  -webkit-transition: 0.35s ease;
+  -moz-transition: 0.35s ease;
+  -ms-transition: 0.35s ease;
+  -o-transition: 0.35s ease;
+  transition: 0.35s ease;
+  background: #fff;
+  padding-top: 15px; }
+.brusselslife_team div.name {
+  font-size: 14px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 5px;
+  color: #656565;
+  font-weight: 300; }
+.brusselslife_team div.desig {
+  font-size: 17px;
+  font-family: "Merriweather", serif;
+  color: #24475e;
+  margin-bottom: 5px;
+  font-weight: 300; }
+.brusselslife_team div.social-links {
+  padding: 15px 0px; }
+  .brusselslife_team div.social-links a {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    border-radius: 44px;
+    background: #1c6dd1;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 9px; }
+.brusselslife_team div.about {
+  font-style: "Open Sans", sans-serif;
+  color: #656565;
+  font-size: 14px;
+  line-height: 1.4em; }
 
 header {
   background: #24475e;
@@ -762,6 +777,135 @@ header.restaurant {
       display: block;
       color: #000;
       font-weight: normal; }
+
+footer p.copy_right {
+  font-family: "Open Sans", sans-serif; }
+footer div.footer-links {
+  padding: 60px 0px 0px 0px;
+  position: relative; }
+  footer div.footer-links div.about-site {
+    width: 60%;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #92e6f2;
+    margin-bottom: 30px; }
+    footer div.footer-links div.about-site p {
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: normal; }
+  footer div.footer-links ul {
+    float: left;
+    width: 20%;
+    margin: 0px 0px 30px 0px;
+    padding: 0 30px 0px 0px;
+    min-height: 240px; }
+    footer div.footer-links ul:hover li:first-child a span {
+      width: 100%; }
+    footer div.footer-links ul li {
+      list-style: none; }
+      footer div.footer-links ul li a {
+        font-size: 13px;
+        font-family: "Open Sans", sans-serif;
+        color: #d8d8d8;
+        text-decoration: none;
+        display: block;
+        padding: 5px 7px;
+        cursor: pointer; }
+        footer div.footer-links ul li a:hover {
+          color: #fff; }
+    footer div.footer-links ul li:first-child a {
+      position: relative;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 7px 7px; }
+      footer div.footer-links ul li:first-child a span {
+        display: block;
+        height: 2px;
+        width: 10%;
+        position: absolute;
+        top: -2px;
+        left: 0px;
+        -webkit-transition: width 0.3s ease;
+        -moz-transition: width 0.3s ease;
+        -ms-transition: width 0.3s ease;
+        -o-transition: width 0.3s ease;
+        transition: width 0.3s ease; }
+    footer div.footer-links ul li:last-child a {
+      height: 44px;
+      font-weight: 100; }
+  footer div.footer-links ul.business_links li a.btn {
+    background: #24ae8d;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 14px; }
+footer p.crafted {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 30px 0px; }
+  footer p.crafted a {
+    color: #fff; }
+footer .footer_img img {
+  display: block;
+  margin: 0 auto; }
+footer .footer_bottom {
+  background-color: #101e27; }
+footer .footer_social_links {
+  background: #1c2d38; }
+footer .footer_logo a {
+  outline: 0;
+  display: block; }
+  footer .footer_logo a:after {
+    content: '';
+    border-bottom: thin solid #4c7f90;
+    width: 90%;
+    display: block;
+    height: 1px;
+    margin: -40px auto auto auto; }
+footer .footer_logo img {
+  width: 240px;
+  margin: 0 auto;
+  display: block;
+  background-color: #101e27;
+  z-index: 400;
+  padding: 15px 60px;
+  position: relative; }
+footer .social_links {
+  padding: 60px 0px 30px 0px;
+  text-align: center; }
+  footer .social_links a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    color: #4c7f90;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 4px;
+    margin-right: 7px;
+    border-radius: 32px;
+    border: thin solid #4c7f90; }
+    footer .social_links a:hover {
+      color: #fff;
+      border: thin solid #101e27; }
+  footer .social_links a.footer_fb:hover {
+    background: #4960ff; }
+  footer .social_links a.footer_tw:hover {
+    background: #66bbff; }
+  footer .social_links a.footer_in:hover {
+    background: #2655ff; }
+  footer .social_links a.footer_ins:hover {
+    background: black; }
+  footer .social_links a.footer_google:hover {
+    background: #ff3d46; }
+footer p.copy_right {
+  text-align: center;
+  font-size: 12px;
+  color: #4c7f90; }
 
 .home_block_left {
   padding-left: 0px;
