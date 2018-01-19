@@ -1086,7 +1086,7 @@ header.restaurant {
     bottom: 96px; }
   .home_block_agenda img {
     width: 100%;
-    margin-bottom: 7px; }
+    margin-bottom: 0px; }
   .home_block_agenda h3 {
     color: #fff;
     font-size: 16px;
@@ -1101,12 +1101,11 @@ header.restaurant {
     color: #fd865e;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    background: #000;
+    font-style: italic;
+    margin: 0px 0px 5px 0px;
     padding: 3px;
     display: inline-block;
-    font-size: 14px;
-    bottom: 90px;
-    left: 30px; }
+    font-size: 14px; }
 
 .home_block_right h3 {
   font-family: "Merriweather", serif;
@@ -1268,27 +1267,32 @@ header.restaurant {
 .home_block_agenda_list ul li.full a figure img {
   width: 100%; }
 
-.home_block_agenda_list div.title h2 {
-  color: #fff; }
-.home_block_agenda_list a {
-  margin-bottom: 15px !important; }
-.home_block_agenda_list a div.agenda-date-title div.ag-date {
-  font-size: 14px !important;
-  font-weight: bold;
-  color: #fd865e;
-  display: inline-block;
-  background: #000;
-  padding: 3px; }
-.home_block_agenda_list ul li a div.agenda-date-title {
-  position: relative;
-  left: auto;
-  bottom: auto;
-  float: left;
-  color: #fff;
-  width: 224px; }
-  .home_block_agenda_list ul li a div.agenda-date-title div.ag-title {
-    font-size: 16px;
-    font-weight: 400; }
+.home_block_agenda_list {
+  background: #253037 !important; }
+  .home_block_agenda_list .video_play {
+    bottom: 70px; }
+  .home_block_agenda_list div.block_title h3 {
+    color: #fff; }
+    .home_block_agenda_list div.block_title h3 span {
+      color: #76bac5; }
+  .home_block_agenda_list a {
+    margin-bottom: 15px !important;
+    position: relative;
+    text-decoration: none; }
+    .home_block_agenda_list a div.agenda-date-title div.ag-date {
+      font-size: 14px !important;
+      font-weight: bold;
+      color: #fd865e;
+      display: inline-block;
+      padding: 3px;
+      font-style: italic; }
+    .home_block_agenda_list a div.agenda-date-title div.ag-title {
+      font-size: 16px;
+      color: #fff;
+      font-family: "Merriweather", serif;
+      padding: 0px 0px 15px 0px; }
+    .home_block_agenda_list a figure img {
+      width: 100%; }
 
 .around_you_address ul li button.video_play {
   left: 108px;
