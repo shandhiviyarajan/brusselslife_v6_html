@@ -7,4 +7,8 @@ node_modules
 /.DS_Store
 /.idea
 /*.xml
+.sass-cache/*
+.sass-cache
+_site
+
 
