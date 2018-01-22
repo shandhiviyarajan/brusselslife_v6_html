@@ -559,8 +559,6 @@ h3.block_sub_title {
   background-color: $yellow;
 }
 
-
-
 figure {
   position: relative;
   div.address_pin {
@@ -707,8 +705,7 @@ a {
     text-align: Center;
     margin: 60px 0px;
     font-family: $baseFont2;
-    
-    
+
   }
 
   section {
@@ -773,7 +770,7 @@ a {
     font-family: $baseFont2;
     margin-bottom: 5px;
     color: $dark_grey;
-    font-weight:300;
+    font-weight: 300;
 
   }
 
@@ -782,7 +779,8 @@ a {
     font-size: 17px;
     font-family: $baseFont2;
     color: $dark_blue;
-    margin-bottom: 5px;   font-weight:300;
+    margin-bottom: 5px;
+    font-weight: 300;
 
   }
 
@@ -810,6 +808,83 @@ a {
   }
 }
 
+.article_address_list {
+  section {
+
+    border-bottom: thin solid #d8d8d8;
+    padding: 0px 0px 30px 0px;
+    margin: 0px 0px 0px 0px;
+
+    a.item_list {
+      display: block;
+      text-decoration: none;
+
+      h2 {
+
+        address {
+          font-size: 14px;
+          font-style: italic;
+          margin-bottom: 5px;
+        }
+      }
+
+      p.category {
+        margin-bottom: 5px;
+        font-size: 14px !important;
+      }
+
+      img {
+        margin: 0px 30px 0px auto;
+        display: block;
+        float: left;
+        width: 50%;
+      }
+
+      div.list_body {
+        h2 {
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+
+      }
+      p em {
+        color: $dark_blue;
+        font-style: italic;
+        font-weight: bold;
+        display: block;
+        margin: 0px 0px 7px 0px;
+      }
+    }
+
+  }
+
+  .corporate_address {
+    background: #f2f2f2;
+    padding: 15px;
+    a {
+      text-decoration: none;
+    }
+    img {
+      width: 100%;
+      margin: 5px 0px 0px 0px !important;
+    }
+
+    h3 {
+      margin: 5px 0px 0px 0px !important;
+      font-size: 14px;
+      color: $dark_blue;
+    }
+
+    p {
+      font-size: 13px !important;
+    }
+  }
+}
 
 
 

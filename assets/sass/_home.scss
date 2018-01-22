@@ -861,6 +861,33 @@
   }
 }
 
+.additional_articles {
+  padding-left: 22px;
+  div.col-md-4,
+  div.col-md-6 {
+    padding: 0px 7px;
+  }
+  figure {
+    img {
+      width: 100%;
+    }
+  }
+
+  a {
+
+    text-decoration: none;
+
+    h3 {
+      font-size: 16px;
+      font-family: $baseFont2;
+      color: $dark_blue;
+      padding: 7px 0px 15px 0px;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+}
+
 div.title {
   iframe {
     float: right;
