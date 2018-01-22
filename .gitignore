@@ -12,3 +12,5 @@ node_modules
 _site
 
 
+production/blog-list/
+production/home/
